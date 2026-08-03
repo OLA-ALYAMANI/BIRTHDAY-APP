@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+@import url(./partials/_variables.css);
+@import url(./Font.css);
+
+
+body{
+    direction: rtl;
+    font-family: var(--roboto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* position: fixed;
+    inset: 0; */
+}
+
+.message-area{
+  /* display: flex;
+  justify-content: center; */
+  position: absolute;
+  height: 30%;
+  width: 15cm;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    height: 12px;
+}
+
+.cake{
+    width: 100%;
+    position: absolute;
+    bottom: 60px;
+}
+
+.bottom-layer , 
+.top-layer,
+.middle-layer{
+    height: 80px;
+    width: 240px;
+    position: relative;
+    margin: auto;
+    background-repeat: repeat;
+    background-size: 100% 100%, 60px 100px;
+    background-position: 28px 0;
+    background-image: linear-gradient(transparent 50px, #fefefe 50px, #fefefe 60px, transparent 60px),
+    radial-gradient(circle at 30px 5px, #713e16 30px, #271E01 31px);
+}
+
+.middle-layer{
+    transform: scale(0.85);
+    top: 72px;
+    animation: rise-1 2s forwards;
+}
+
+@keyframes rise-1{
+    100%{
+        top: 7px;
+    }
+}
+
+.top-layer{
+    transform: scale(0.7);
+    top: 144px;
+    animation: rise-2 2s 2s forwards;
+}
+
+@keyframes rise-2{
+    100%{
+        top: 26px;
+    }
+}
+
+.candle{
+    background: repeating-linear-gradient(45deg, #fd3018 0, #fd3018 5px, #ffa89e 5px, #ffa89e 10px);
+    height: 45px;
+    width: 15px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: rise-3 1s 4s forwards;
+}
+
+@keyframes rise-3{
+    100%{
+        bottom: 202px;
+    }
+}
+
+.candle::after{
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: var(--color-300);
+    border-radius:  0 50% 50% 50%;
+    transform: scale(0) rotate(45deg);
+    bottom: 50px;
+    left: -0.5px;
+    animation: flame 1.5s 5s forwards;
+}
+
+@keyframes flame{
+    100%{
+        transform: scale(1) rotate(45deg);
+    }
+}
+
+/* MESSAGE STYLE */
+
+.message{
+    padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.message-box{
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.gift-btn{
+  display: flex;
+  justify-self: center;
+}
+
+.gift-btn button{
+  padding: 15px;
+  width: 20vh;
+  background: var(--color-400);
+  color: var(--color-100);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--roboto);
+  font-size: 20px;
+  position: relative;
+  z-index: 1000;
+}

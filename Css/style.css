@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+@import url(./partials/_variables.css);
+
+body{
+  direction: rtl;
+  font-family: var(--roboto);
+  /* background: linear-gradient(135deg, #ff9a9e, #fad0c4); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  /* color: var(--gradient-color); */
+}
+
+section{
+  display: block;
+  unicode-bidi: isolate;
+  width: 100%;
+}
+
+.birth-count-area{
+  /* margin: 2rem; */
+  width: 50%;
+}
+
+.container {
+  background: #ffffffdd;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  max-width: 100%;
+}
+
+.gest-info{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.input-box {
+  background: #fff0f6;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.input-box label {
+  display: block;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.input-box input {
+  width: 90%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.input-box button {
+  margin: 12px 0;
+  width: 100%;
+  padding: 10px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.input-box button:hover {
+  background: #d81b60;
+}

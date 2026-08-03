@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/gift.css">
+    <title>هدية عيد الميلاد</title>
+</head>
+<body>
+    <!-- START GIFT AREA -->
+    <section class="gift-area">
+        <div class="container">
+            <div class="title">
+                <h1>هـديتـك يا الغـالـي</h1>
+            </div>
+            <div class="gift">
+                <div class="gift-box" onclick="openGift()">
+                    <div class="lid"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+
+            <div id="message" class="hidden">
+                <h2 id="title">🎉 رسالة لك يا 🎉</h2>
+                <p>أتمنى لك عيد ميلاد مليء بالفرح والسعادة واللحظات الجميلة.</p>
+            </div>
+            <div class="btn">
+                <button id="nextBtn" onclick="goCountdown()">التالي</button>
+                <button id="beforetBtn" onclick="goBirthday()">السابق</button>
+            </div>
+        </div>
+    </section>
+        <!-- END GIFT AREA -->
+         
+         
+</body>
+<script src="./Js/the-gift.js"></script>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+@import url(./partials/_variables.css);
+@import url(./Font.css);
+
+body{
+    position: relative;
+    direction: rtl;
+    font-family: var(--roboto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body::before {
+  content: "";
+  /* position: fixed; */
+  /* inset: 0; */
+  right: 0;
+  top: 0;
+  width: 27rem;
+  height: 100%;
+  background-image: url(/Img/aadde8130739c83b232c7da228fe58b7.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.4));
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  /* position: fixed; */
+  left: 0;
+  top: 0;
+  width: 25rem;
+  height: 100%;
+  background-image: url("/Img/54f4d07162598b828f578fc0fbd842a9.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.4));
+  pointer-events: none;
+}
+
+.balloon-img{
+    margin: 15px;
+}
+
+.balloon-img img{
+    width: 43rem;
+    align-items: self-end;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+/* COUNTDOWM STYLE */
+.countdown {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.unit {
+    width: 100px;
+    flex: 1;
+    background: var(--color-200);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.number {
+  font-size: 40px;
+  /* font-weight: bold; */
+  color: var(--color-100);
+}
+
+.label{
+    font-size: 35px;
+    color: var(--color-100);
+}
+
+.btn{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+button{
+    padding: 15px;
+    /* width: 70px; */
+    background: var(--color-700);
+    color: var(--color-600);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Beiruti", sans-serif;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color:rgba(244, 237, 138, 0.85);
+}

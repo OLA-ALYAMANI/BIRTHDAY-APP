@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+@import url(./partials/_variables.css);
+@import url(./Font.css);
+
+body{
+  direction: rtl;
+  font-family: var(--roboto);
+  background: url(../Img/2112.w023.n001.1620B.p1.1620.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(205, 204, 204, 0.25); /* طبقة شفافة */
+  pointer-events: none;
+}
+
+section{
+  display: block;
+  unicode-bidi: isolate;
+  width: 100%;
+}
+
+/* صندوق الهدية */
+
+.gift-area{
+    width: 85vh;
+}
+
+.title h1{
+    text-align: center;
+    height: 16rch;
+    padding: 23px;
+    font-size: 40px;
+}
+
+.gift{
+    /* margin-top: 2rex; */
+    height: 21rch;
+}
+
+.gift-box {
+  width: 120px;
+  height: 120px;
+  margin: 30px auto;
+  position: relative;
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
+}
+
+.lid {
+  width: 140px;
+  height: 30px;
+  background: var(--color-200);
+  border-radius: 5px 5px 0 0;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+}
+
+.box {
+  width: 140px;
+  height: 90px;
+  background: var(--color-600);
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* حركة الهدية */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+/* الرسالة */
+#message {
+  background: var(--color-400);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.5s;
+}
+
+#message h2{
+    color: var(--color-100);
+    font-size: 31px;
+    font-weight: 600;
+}
+
+#message p{
+    color: var(--color-100);
+    font-size: 22px;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+button{
+    padding: 15px;
+    /* width: 70px; */
+    background: var(--color-700);
+    color: var(--color-600);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Beiruti", sans-serif;
+    font-size: 27px;
+}
+
+button:hover{
+    background-color:rgba(244, 237, 138, 0.85);
+}
