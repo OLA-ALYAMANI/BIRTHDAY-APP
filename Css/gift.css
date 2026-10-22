@@ -58,14 +58,26 @@ section{
   animation: bounce 1.5s infinite;
 }
 
+
+
 .lid {
-  width: 140px;
+  width: 155px;
   height: 30px;
   background: var(--color-200);
   border-radius: 5px 5px 0 0;
   position: absolute;
   top: 0;
+  right: -7px;
   transition: 0.5s;
+}
+
+.lid::before{
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: var(--color-500);
+  left: 63px;
 }
 
 .box {
@@ -75,6 +87,15 @@ section{
   border-radius: 0 0 10px 10px;
   position: absolute;
   bottom: 0;
+}
+
+.box::before{
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 90px;
+  background: var(--color-500);
+  left: 55px;
 }
 
 /* حركة الهدية */

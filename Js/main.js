@@ -22,7 +22,17 @@ function setBirthday() {
   localStorage.setItem("BirthDay Day", birthdayDay);
   localStorage.setItem("Birthday Month", birthdayMonth);
 
-  window.location.href = "../الرسالة.html"
+  const today = new Date();
+  const todayDay = today.getDate();
+  const todayMonth = today.getMonth() + 1;
+
+  if (birthdayDay == todayDay && birthdayMonth === todayMonth){
+    window.location.href = "/الرسالة.html"
+  }else{
+    window.location.href = "/يوم-الميلاد-التالي.html"
+  }
+
+  return;
 
   // تحديث العنوان باسم المستخدم
   // document.getElementById("title").textContent = `🎂 عيد ميلاد سعيد يا ${userName}!`;
