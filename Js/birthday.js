@@ -98,5 +98,5 @@ function updateCountdown() {
 // updateCountdown();
 
 function goBirthday(){
-    window.location.href = "../احتفال عيد الميلاد.html"
+    window.location.href = "/الرئيسية.html"
 }

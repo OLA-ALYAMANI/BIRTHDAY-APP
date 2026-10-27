@@ -15,9 +15,9 @@ function openGift() {
 }
 
 function goCountdown() {
-  window.location.href = "../يوم-الميلاد-التالي.html";
+  window.location.href = "/يوم-الميلاد-التالي.html";
 }
 
 function goBirthday(){
-  window.location.href = "../احتفال عيد الميلاد.html"
+  window.location.href = "/الرئيسية.html.html"
 }

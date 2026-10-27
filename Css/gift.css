@@ -5,11 +5,10 @@
 body{
   direction: rtl;
   font-family: var(--roboto);
-  background: url(../Img/2112.w023.n001.1620B.p1.1620.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(/Img/26dcea07f4bbd33c404b491f71cc2c23.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
+  pointer-events: fill;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,8 +20,10 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(205, 204, 204, 0.25); /* طبقة شفافة */
-  pointer-events: none;
+  background: url(/Img/gift-Box.png);
+  background-size: 28%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
 
 section{
@@ -57,8 +58,6 @@ section{
   cursor: pointer;
   animation: bounce 1.5s infinite;
 }
-
-
 
 .lid {
   width: 155px;
@@ -147,7 +146,7 @@ button{
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-family: "Beiruti", sans-serif;
+    font-family: var(--roboto);
     font-size: 27px;
 }
 

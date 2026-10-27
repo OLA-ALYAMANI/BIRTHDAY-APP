@@ -4,13 +4,14 @@
 body{
   direction: rtl;
   font-family: var(--roboto);
-  /* background: linear-gradient(135deg, #ff9a9e, #fad0c4); */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  /* color: var(--gradient-color); */
+  background-image: url(/Img/Balloon-Gold.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section{
@@ -20,7 +21,6 @@ section{
 }
 
 .birth-count-area{
-  /* margin: 2rem; */
   width: 50%;
 }
 
@@ -40,7 +40,9 @@ section{
 }
 
 .input-box {
-  background: #fff0f6;
+  width: 26rem;
+  height: 26rem;
+  background: rgba(246, 219, 113, 0.6);
   padding: 15px;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -50,29 +52,38 @@ section{
 .input-box label {
   display: block;
   margin: 8px 0;
-  font-size: 14px;
+  padding: 6px 0;
+  font-size: 23px;
+  font-weight: bold;
 }
 
 .input-box input {
-  width: 90%;
-  padding: 8px;
+  width: 100%;
+  padding: 17px;
   border-radius: 8px;
   border: 1px solid #ccc;
   margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 14.5px;
+  border-radius: 15px;
 }
 
 .input-box button {
+  display: inline-block;
   margin: 12px 0;
   width: 100%;
-  padding: 10px;
-  background: #e91e63;
-  color: white;
-  border: none;
-  border-radius: 8px;
+  padding: 10px 16px;
+  background: none;
+  color: var(--color-400);
+  border: 1.5px solid var(--color-400);
+  border-radius: 18px;
   cursor: pointer;
-  font-size: 15px;
+  font-family: var(--roboto);
+  font-size: 24px;
 }
 
 .input-box button:hover {
-  background: #d81b60;
+  background: var(--color-400);
+  color: white;
+  border: none;
 }
