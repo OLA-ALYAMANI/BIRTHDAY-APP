@@ -27,7 +27,7 @@ function setBirthday() {
   const todayMonth = today.getMonth() + 1;
 
   if (birthdayDay == todayDay && birthdayMonth === todayMonth){
-    window.location.href = "/الرسالة.html"
+    window.location.href = "/الهدية.html"
   }else{
     window.location.href = "/يوم-الميلاد-التالي.html"
   }

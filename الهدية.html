@@ -3,36 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Css/gift.css">
+    <link rel="stylesheet" href="/Css/gift.css">
+    <link rel="stylesheet" href="/Css/cake.css">
     <title>هدية عيد الميلاد</title>
 </head>
 <body>
     <!-- START GIFT AREA -->
-    <section class="gift-area">
+    <section class="main-area">
         <div class="container">
-            <div class="title">
-                <h1>هـديتـك يا الغـالـي</h1>
+
+            <div class="cake">
+                <div class="candle"></div>
+                <div class="top-layer"></div>
+                <div class="middle-layer"></div>
+                <div class="bottom-layer"></div>
             </div>
+
             <div class="gift">
                 <div class="gift-box" onclick="openGift()">
                     <div class="lid"></div>
                     <div class="box"></div>
                 </div>
             </div>
+        </div>
 
-            <div id="message" class="hidden">
-                <h2 id="title">🎉 رسالة لك يا 🎉</h2>
-                <p>أتمنى لك عيد ميلاد مليء بالفرح والسعادة واللحظات الجميلة.</p>
-            </div>
-            <div class="btn">
-                <button id="nextBtn" onclick="goCountdown()">التالي</button>
-                <button id="beforetBtn" onclick="goBirthday()">السابق</button>
-            </div>
+        <div id="message" class="hidden">
+            <h2 id="title">🎉 رسالة لك يا 🎉</h2>
+            <p>أتمنى لك عيد ميلاد مليء بالفرح والسعادة واللحظات الجميلة.</p>
+        </div>
+
+        <div class="bottom-area">
+        <div class="btn">
+            <button id="nextBtn" onclick="goCountdown()">التالي</button>
+            <button id="beforetBtn" onclick="goBirthday()">السابق</button>
         </div>
     </section>
+    
         <!-- END GIFT AREA -->
          
          
 </body>
-<script src="./Js/the-gift.js"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@4.4.0/tsparticles.confetti.bundle.min.js"></script>
+<script src="/Js/the-gift.js"></script>
+
 </html>

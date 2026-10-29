@@ -32,22 +32,22 @@ section{
   width: 100%;
 }
 
-/* صندوق الهدية */
+/* GIFT BOX*/
 
-.gift-area{
+.main-area{
     width: 85vh;
 }
 
-.title h1{
-    text-align: center;
-    height: 16rch;
-    padding: 23px;
-    font-size: 40px;
+.main-area .container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 70px;
+  margin-bottom: 60px;
 }
 
 .gift{
-    /* margin-top: 2rex; */
-    height: 21rch;
+    height: auto;
 }
 
 .gift-box {
@@ -104,7 +104,7 @@ section{
   100% { transform: translateY(0); }
 }
 
-/* الرسالة */
+/* MESSAG */
 #message {
   background: var(--color-400);
   padding: 20px;
@@ -140,7 +140,6 @@ section{
 
 button{
     padding: 15px;
-    /* width: 70px; */
     background: var(--color-700);
     color: var(--color-600);
     border: none;
